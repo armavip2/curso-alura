@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+	// aqui usa um código tipo document.write();
+	// para deixar mais pratico
+}
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+	// ali no mostra(frase) eu usei o frase para mostrar que sera um frase ali dentro. exemplo
+	// mostra("Eu nasci em : " + (ano - 25));
+}
+                    //o nome dessas palavras em parensenteses é parametro!
+function calculaImc(peso, altura) { 
+    //eu usei peso e altura porque o script não estava preparado para receber só 2 código entao especifiquei
+
+    var imc = peso / (altura * altura);
+    //mostra (" O imc calculado é " + imc);
+    return imc;
+    // return ele faz com oque o imcAmigo ou imcFlavio receba o resultado, que nesse caso seria o imc
+    // se fosse tipo return 10, o imcFlavio iria mostrar 10.
+}
+
+    var imcFlavio = calculaImc(73, 1.71);   //pode retirar a variavel e deixar só o numero
+    //var pesoFlavio = 73;
+    //var alturaFravio = 1.71;
+    // var imcFlavio = pesoFlavio / (alturaFravio * alturaFravio); eu tirei pq ira usar a function
+    //mostra("o imc do flavio é " + imcFlavio);
+
+    var imcAmigo = calculaImc(68, 1.72);
+    //var pesoAmigo = 68;
+    //var alturaAmigo = 1.72;
+    //var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo); 
+    //eu tirei pq ira usar a function, mas poderia deixar.
+    //mostra("O imc do meu amigo é " + imcAmigo);
+
+    mostra (imcFlavio);
+    mostra (imcAmigo);
+
+</script>
