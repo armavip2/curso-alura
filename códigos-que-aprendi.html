@@ -23,7 +23,8 @@ function mostra(frase) {
 
 	document.write( "paralelo" + 20);
 		// um texto usando o (+) é uma concatenação. 
-		// E para ser usado o texto mais numero, se for conta tem que usar o () na conta pq, o parenteses seria para falar pro código que ele tem que ser feito primeiro.
+		// E para ser usado o texto mais numero, se for conta tem que usar o () na conta pq, 
+		//o parenteses seria para falar pro código que ele tem que ser feito primeiro.
 
 	document.write("<br">);
 		//é para pular linhas
@@ -49,11 +50,128 @@ function mostra(frase) {
 	if();
 		//if se ele mostra que se os pontos forem maior que 28 vai mandar essa mensagem.	
 		//if é usado como condição
-
 		if(imc >= 18.5 && imc <= 35) {
             // o && é para falar que esta (entre) nessa ocasião.            
-mostra("Seu IMC está excelente!");
+			mostra("Seu IMC está excelente!");
 
+	while(true);
+		// while true, ele é usado para repetir codigos.
+
+
+	for(espaço1; espaço2; espaço3;){
+		  // serve para repetir tambem;
+
+		//espaço 1 é para por o var; 
+		//o espaço2 é para por a condição que compara o valor
+		// e o espaço3 é para por o criterio do var
+
+			// um exemplo é
+				for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1){
+					mostra(7 * multiplicador);
+					multiplicador = multiplicador + 1;
+				}
+				
+				for( var contador = 1; contador <= 10; contador++ ) {
+    				alert("Contador atual: " + contador);
+				}
+			// para eu tranformar o for em while, seria assim
+
+			var i = 0;
+			while( i < 10) {
+		    	alert( "O resultado é " + (2 * i) );
+    			i++;    
+			}
+
+
+	var total = 0
+		// se eu quiser ir acrescentando de 1 em 1 eu posso usar
+		(total++;)
+
+	
+
+	break;
+	// ele quebra o loop 
+	//exemplo 
+		while(tentativas <= 3) {
+
+		var chute = parseInt(prompt("Digite seu chute!"));
+
+		if(chute == numeroPensado) {
+
+			mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+			break;
+
+		} else {
+
+			mostra("Você ERROU!");
+		}
+
+	<input/>
+		// ele cria um lugar para escrever no site
+	<button></button>
+		//ele cria um botao, que poder ser escrito algo no meio
+		// exemplo
+		<button>Compare com o meu segredo</button>
+
+
+	button.onclick =
+		// quando o botao for clicado ele vai fazer algo
+		// exemplo
+
+		function verifica() {
+
+			if(input.value == segredo) {
+
+				alert("Você ACERTOU!");
+		} else {
+
+				alert("Você ERROU!!!!!!!!");
+		}
 }
+
+		var button = document.querySelector("button");
+
+		button.onclick = verifica;
+
+
+	document.querySelector()
+		//Ela receberá a função document.querySelector()- 
+		//atenção para o "S" maiúsculo. Utilizaremos a querySelector() para inserir aquilo que está no mundo HTML na variável input. 
+		//Ela receberá como parâmetro o nome da tag que desejamos utilizar:
+		exemplo
+
+		<meta charset="UTF-8">
+
+			<input/>
+			<button>Compare com o meu segredo</button>
+
+			<script></script>
+
+    			var input = document.querySelector("input");
+
+			</script>
+
+	input.value
+			//Para sabermos qual o valor que está inserido na variável, utilizaremos o input.value
+
+	input.focus();
+		// ele faz o imput ficar azul, ou melhor para ver
+
+	input.value = "";
+		// se eu escrever isso sem nada, ele vai apagar o numero que estava escrito no local
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
 
 </script>

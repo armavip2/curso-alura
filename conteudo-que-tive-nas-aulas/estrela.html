@@ -1,0 +1,24 @@
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for(var linha = 1; linha <= 3; linha++) {
+
+        for(var coluna = 1; coluna <= 10; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+// eu posso usar um for, dentro de outro for, tipo
+// o primeiro for é para criar as 3 linhas, e o seundo for
+// é para por as 10 estrelas nas linhas
+</script>
