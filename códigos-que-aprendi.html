@@ -135,8 +135,8 @@ function mostra(frase) {
 
 
 	document.querySelector()
-		//Ela receberá a função document.querySelector()- 
-		//atenção para o "S" maiúsculo. Utilizaremos a querySelector() para inserir aquilo que está no mundo HTML na variável input. 
+		//atenção para o "S" maiúsculo. 
+		//Utilizaremos a querySelector() para inserir aquilo que está no mundo HTML no mundo script 
 		//Ela receberá como parâmetro o nome da tag que desejamos utilizar:
 		exemplo
 
@@ -163,6 +163,126 @@ function mostra(frase) {
 
 	
 	
+	.length
+
+		//Para não termos que alterar nosso for() todas as 
+		//vezes que quisermos adicionar um novo elemento, poderemos utilizar o 
+		//.length para termos sempre o array atual no for()
+
+		exemplo
+
+			var segredos = [5,7,10,2,3];
+
+			var input = document.querySelector("input");
+			input.focus();
+
+			function verifica() {
+											// eu posso utilizar ele, quando eu adicionar um numero no var segredos, 
+											// com o length ai eu nao precisarei mudar.
+			for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+			if(input.value == segredos[posicao]) {
+
+				alert("Você ACERTOU!");
+				break;
+				} 
+			}
+				// o array é o colchetes []
+	var numeros = [1,3,5,2,6]; // e aqui nao usamos, 1 2 3 4, a gente usa 0,1,2,3,4, isso significa que o 1 numero ou a primeira coisa
+						   // é o 0 e o 2 é o 1, e assim vai
+			// eu posso usar o array, se eu precisar por mais coisas na variavel
+
+
+
+	console.log();
+		// ele mostra  a reposta de algo no console do site.
+			exemplo
+
+
+				var segredos = [];
+    			segredos.push(Math.round(Math.random() * 10));
+    			segredos.push(Math.round(Math.random() * 10));
+    			segredos.push(Math.round(Math.random() * 10));
+    			segredos.push(Math.round(Math.random() * 10));
+   				segredos.push(Math.round(Math.random() * 10));
+
+    			console.log(segredos);
+					// aqui ele mostrara o resultado das respostas do segredos
+
+
+
+
+	!==
+		//isso quer dizer que ele nao quer o numero que apareça
+			exemplo
+			if (numeroAleatorio !== 0)			
+				// aqui esta mostrando que ele nao quer que apareça o 0
+
+
+
+
+	var frutas = ["abacaxi", "banana", "melão"];
+
+		// se eu quiser adicionar mais alguma coisa ali no array eu posso usar o push
+
+		frutas.push("abacate");
+
+												CANVAS SERVE PARA EU PODER (PINTAR) NA TELA.
+												BIBLIOTECAS  (APIs)
+	<canvas></canvas>
+		// é uma are da tela que pode desenhar, que esta em branco
+
+		// para conseguir desenhar na tela tem que por o quanto da tela
+		// sera usado, entao se escreve
+		<canvas width="600" e height="40"
+				// largura e altura
+			var tela = document.querySelector('canvas'); // serve para puxar o canvas para o mundo script
+			var pincel = tela.getContext ('2d');
+			// isso serve para pegar um pincel para a tela
+
+			pincel.fillStyle = 'lightgrey' // ela precisa receber algo
+			// isso serve para escolher a cor do preenchimento
+
+				//o fillStyle precisa vir antes do fillRect
+							  //largura, altura
+			pincel.fillRect(0, 0, 600, 400); // para eu poder preencher mais eu preciso mudar o width e o height, se nao ele nao preenche
+			//              X e y . para prencher algo precisa por as cordenadas
+			//prencher é fill e retangulo e rect
+			// isso serve para preencher um retangulo
+
+												PARA EU FAZER ALGUMA FORMA POSSO UTILIZAR ESSES CODIGOS.
+			beginPath();				   	
+			 // ele iniciara um caminho
+
+			 moveTo();
+			 // serve para mover até algum lugar
+			exemplo
+				pincel.moveTo(300, 200)
+
+			lineTo();
+			// serve para fazer uma linha 
+			exemplo
+				pincel.lineTo(200, 400);
+							   x    y
+
+			pincel.fill();
+			// serve para preencher a forma
+			
+												PARA PODER CRIAR UM CIRCULO USAMOS ESTES CODIGOS.
+												pincel.fillStyle = 'blue';
+    		pincel.beginPath();
+   			pincel.arc(300, 200, 50, 0, 2 * 3.14);
+    		pincel.fill();
+
+
+
+			pincel.arc(300, 200, 100, 0, 2*3.14);
+				//Os primeiros dois parâmetros do método arc são as coordenadas X e Y do centro do circulo 
+				//(no nosso caso, 300 e 200). O terceiro parâmetro é o valor do raio (no nosso caso, 100). 
+				//O quarto e quinto parâmetros definem o ângulo inicial e final do circulo. 
+				//Como queremos desenhar um circulo completo, os parâmetros são, respectivamente, 0 e 2 * PI (cujo valor é 3.14).
+
+
 
 
 
