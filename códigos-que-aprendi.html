@@ -269,7 +269,7 @@ function mostra(frase) {
 			// serve para preencher a forma
 			
 												PARA PODER CRIAR UM CIRCULO USAMOS ESTES CODIGOS.
-												pincel.fillStyle = 'blue';
+			pincel.fillStyle = 'blue';
     		pincel.beginPath();
    			pincel.arc(300, 200, 50, 0, 2 * 3.14);
     		pincel.fill();
@@ -277,14 +277,31 @@ function mostra(frase) {
 
 
 			pincel.arc(300, 200, 100, 0, 2*3.14);
-				//Os primeiros dois parâmetros do método arc são as coordenadas X e Y do centro do circulo 
-				//(no nosso caso, 300 e 200). O terceiro parâmetro é o valor do raio (no nosso caso, 100). 
-				//O quarto e quinto parâmetros definem o ângulo inicial e final do circulo. 
-				//Como queremos desenhar um circulo completo, os parâmetros são, respectivamente, 0 e 2 * PI (cujo valor é 3.14).
+				/*Os primeiros dois parâmetros do método arc são as coordenadas X e Y do centro do circulo 
+				(no nosso caso, 300 e 200). O terceiro parâmetro é o valor do raio (no nosso caso, 100). 
+				O quarto e quinto parâmetros definem o ângulo inicial e final do circulo. 
+				Como queremos desenhar um circulo completo, os parâmetros são, respectivamente, 0 e 2 * PI (cujo valor é 3.14).
+				*/
 
 
+			pincel.fillStroke = 'black'
+				// serve para por uma cor na borda
+			pincel.StrokeRect(0, 0, 50, 50)
+				//serve para criar uma borda preta entre as formas.
 
 
+			function desenhaQuadradoVerde() {
+
+				var tela = document.querySelector('canvas');
+				var pincel = tela.getContext('2d');
+
+				pincel.fillStyle = 'green';
+				pincel.fillRect(0, 0, 50, 50);
+				pincel.strokeStyle = 'black';
+				pincel.strokeRect(0, 0, 50, 50);
+					//serve para desenhar um quadrado verde
+}
+				
 
 
 
