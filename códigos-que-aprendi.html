@@ -305,10 +305,66 @@ function mostra(frase) {
 
 
 
+	tela.oncontextmenu = mudaCor;
+		// isso serve para, falar para o google, que ele esta clicando com o botão direito
+
+	onmousemove
+		// serve para capturar o movimento do mouse
+		onmousedown
+			//O primeiro é disparado toda vez que o botão esquerdo do mouse é pressionado
+		onmouseup
+			//o segundo quando ele é solto.
 
 
 
 
 
+								FUNÇÕES ANÔNIMAS
+								/*
+								
+								Como as duas funções não possuem mais um nome, são chamadas de funções anônimas.  
+								Isso mesmo, uma função anônima é aquela que não possui um nome e nosso código dá um erro porque se elas não possuem nome,
+								 como iremos chamá-las ou atribuí-las aos eventos onmousedown e onmouseup, certo?
 
+								Então, como iremos passar um código para tela.onmousedown e tela.onmouseup, se não temos mais o nome da função?
+								Uma função anônima não pode existir solta, porque como não tem um nome, ninguém será capaz de chamá-la,
+								 mas podemos atribuir a função anônima diretamente a uma variável ou a uma propriedade, como tela.onmousedown e tela.onmouseup
+								*/
+								
+	<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false;
+
+  // atribuindo diretamente a função anônima
+   tela.onmousemove = function(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+    }
+
+    tela.onmousedown = function() {
+
+        desenha = true;
+    }
+
+     tela.onmouseup = function() {
+
+        desenha = false;
+    }
+
+</script>
 </script>
